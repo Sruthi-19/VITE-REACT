@@ -2,7 +2,7 @@ import React from "react";
 
 const ItemDisplay=({h2})=>{
   return(
-    <h2>{h2}</h2>
+    <li>{h2}</li>
   )
 }
 

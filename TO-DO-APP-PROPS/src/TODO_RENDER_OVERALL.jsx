@@ -1,5 +1,6 @@
 import React from "react";
 import { UpdateInputBox, UpdateButton } from "./TODO_UPDATE_CONTAINER";
+import "./todo.css";
 import {
   ItemDisplay,
   DeleteButton,
@@ -44,13 +45,13 @@ const TaskRender = ({
   };
 
   return (
-    <div>
+    <div id="task-container">
       <h1>THE TASKS ARE RENDERED HERE</h1>
       {listTodo.map((item) => {
         if (item.id == editId) {
           
           return (
-            <div>
+            <div id="update-container">
               <UpdateInputBox 
                 value={newTodo} 
                 onChange={setNewTodo} 
@@ -66,7 +67,7 @@ const TaskRender = ({
         else {
 
           return (
-            <>
+            <div  id="del-update-container">
               <ItemDisplay 
                 h2={item.title}
               />
@@ -78,7 +79,7 @@ const TaskRender = ({
                 item={item}
                 onClick={() => displayUpdateContainer(item)}
               />
-            </>
+            </div>
           );
 
           

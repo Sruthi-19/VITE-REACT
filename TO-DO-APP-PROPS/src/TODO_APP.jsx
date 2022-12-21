@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import { v4 as uuidv4, v4 } from "uuid";
+import { v4 } from "uuid";
 import { AddButton, InputBox } from "./TODO_INPUT_ADD";
 import TaskRender from "./TODO_RENDER_OVERALL";
+import "./todo.css";
 
 const TodoApp = () => {
   const [initialTodo, setInitialTodo] = useState("");
@@ -21,8 +22,8 @@ const TodoApp = () => {
   };
 
   return (
-    <div>
-      <h1>ENTER TASKS HERE</h1>
+    <div id="overall-container">
+      <h1 id="main-heading">ENTER TASKS HERE</h1>
 
       <InputBox
         value={initialTodo}

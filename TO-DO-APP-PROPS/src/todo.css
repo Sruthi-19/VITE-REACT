@@ -1,0 +1,25 @@
+#overall-container{
+    text-align: center;
+}
+
+#del-update-container{
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    text-align: left;
+    column-gap: 50px;
+    margin-bottom: 20px;
+
+}
+
+#update-container{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-bottom: 20px;
+
+}
+#rendered-item{
+    display: flex;
+    background-color: aqua;
+}

@@ -8,6 +8,7 @@ const TwitterComponent = () => {
       id: 1,
       isLiked: false,
       name: "Leanne Graham",
+      img:"https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
       username: "Bret",
       email: "Sincere@april.biz",
       address: {
@@ -32,6 +33,7 @@ const TwitterComponent = () => {
       id: 2,
       isLiked: false,
       name: "Ervin Howell",
+      img:"https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
       username: "Antonette",
       email: "Shanna@melissa.tv",
       address: {
@@ -56,6 +58,7 @@ const TwitterComponent = () => {
       id: 3,
       isLiked: false,
       name: "Clementine Bauch",
+      img:"https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
       username: "Samantha",
       email: "Nathan@yesenia.net",
       address: {
@@ -80,6 +83,8 @@ const TwitterComponent = () => {
       id: 4,
       isLiked: false,
       name: "Patricia Lebsack",
+      img:"https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+
       username: "Karianne",
       email: "Julianne.OConner@kory.org",
       address: {
@@ -104,6 +109,8 @@ const TwitterComponent = () => {
       id: 5,
       isLiked: false,
       name: "Chelsey Dietrich",
+      img:"https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+
       username: "Kamren",
       email: "Lucio_Hettinger@annie.ca",
       address: {
@@ -128,6 +135,8 @@ const TwitterComponent = () => {
       id: 6,
       isLiked: false,
       name: "Mrs. Dennis Schulist",
+      img:"https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+
       username: "Leopoldo_Corkery",
       email: "Karley_Dach@jasper.info",
       address: {
@@ -152,6 +161,7 @@ const TwitterComponent = () => {
       id: 7,
       isLiked: false,
       name: "Kurtis Weissnat",
+      img:"https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
       username: "Elwyn.Skiles",
       email: "Telly.Hoeger@billy.biz",
       address: {
@@ -176,6 +186,7 @@ const TwitterComponent = () => {
       id: 8,
       isLiked: false,
       name: "Nicholas Runolfsdottir V",
+      img:"https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
       username: "Maxime_Nienow",
       email: "Sherwood@rosamond.me",
       address: {
@@ -200,6 +211,7 @@ const TwitterComponent = () => {
       id: 9,
       isLiked: false,
       name: "Glenna Reichert",
+      img:"https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
       username: "Delphine",
       email: "Chaim_McDermott@dana.io",
       address: {
@@ -224,6 +236,8 @@ const TwitterComponent = () => {
       id: 10,
       isLiked: false,
       name: "Clementina DuBuque",
+      img:"https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80",
+
       username: "Moriah.Stanton",
       email: "Rey.Padberg@karina.biz",
       address: {
@@ -246,48 +260,55 @@ const TwitterComponent = () => {
     },
   ]);
 
-  const likeDislike = (item, index) => {
-    console.log("input", item, index);
-    if (item.isLiked == false) {
-      set_user((prevstate) => {
-        return prevstate.map((items, indexes) => {
-          if (index == indexes) {
-            items.isLiked = true;
-          }
-          console.log(items.isLiked);
-          return items;
-        });
-      });
-    } else {
-      set_user((prevstate) => {
-        return prevstate.map((items, indexes) => {
-          if (index == indexes) {
-            items.isLiked = false;
-          }
-          console.log(items.isLiked);
-          return items;
-        });
-      });
-    }
-    console.log("final", item.isLiked);
-  };
+  const[likes,set_likes]=useState({});
+
+  // const likeDislike = (item, index) => {
+  //   if (item.isLiked == false) {
+  //     set_user((prevstate) => {
+  //       return prevstate.map((items, indexes) => {
+  //         if (index == indexes) {
+  //           items.isLiked = true;
+  //         }
+  //         console.log(items.isLiked);
+  //         return items;
+  //       });
+  //     });
+  //   } else {
+  //     set_user((prevstate) => {
+  //       return prevstate.map((items, indexes) => {
+  //         if (index == indexes) {
+  //           items.isLiked = false;
+  //         }
+  //         console.log(items.isLiked);
+  //         return items;
+  //       });
+  //     });
+  //   }
+  //   console.log("final", item.isLiked);
+  // };
+
+  const likeDislike=(id,isLiked)=>{
+    set_likes((prevState)=>{
+      return {...prevState,[id]: !isLiked}
+    })
+    // console.log(likes[item.id])
+  }
   const liked = {
     color: "red",
-    fontSize: "40px"
   };
   const dislike = {
     color: "white",
-    fontSize: "40px"
   };
   return (
     <>
       <h1>TWITTER CARDS</h1>
-      <div style={{flexWrap:"wrap"}}>
-      {user.map((item, index) => {
+      <div className="overall-container">
+      {user.map((item) => {
         return (
-          <div>
-            <h1>{item.name}</h1>
-            <button  style={{border:"none",outline:"none"}} className="button-tag" onClick={() => likeDislike(item, index)}><i class="fa fa-heart" style={item.isLiked ? liked : dislike}></i></button>
+          <div className="card-container">
+            <img className="profile-img" src={item.img}></img>
+            <h3>{item.name}</h3>
+            <button  style={{border:"none",outline:"none"}} className="button-tag" onClick={() => likeDislike(item.id,likes[item.id])}><i id="like-icon" class="fa fa-heart" style={likes[item.id] ? liked : dislike}></i></button>
           </div>
         );
       })}

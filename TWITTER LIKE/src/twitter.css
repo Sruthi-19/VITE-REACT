@@ -1,7 +1,29 @@
-/* button{
-    border: none;
-    background-color: antiquewhite;
-} */
+h1{
+    color: white;
+    text-align: center;
+}
+#like-icon{
+    font-size: 40px;
+}
+.overall-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 30px;
+    justify-content: space-evenly;
+}
+.card-container{
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    background-color: royalblue;
+}
+
+.profile-img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
 .button-tag{
     background-color: transparent;

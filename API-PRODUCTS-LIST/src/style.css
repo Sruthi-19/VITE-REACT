@@ -1,0 +1,15 @@
+#overall-div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+#list-container{
+    width: 40%;
+    margin-right: 0%;
+}
+
+#description-container{
+    width: 60%;
+}

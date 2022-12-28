@@ -1,0 +1,31 @@
+#overall-div{
+    margin-left: 10%;
+
+}
+#first-level{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    width: 100%;
+}
+
+#child{
+    margin-left: 27%;
+}
+
+#button{
+    background: none;
+    border: none;
+    outline: none;
+    border-radius: 52%;
+    padding: 0px;
+
+}
+
+#button:hover{
+    background-color: rgba(128, 128, 128, 0.803);
+}
+
+.material-symbols-outlined{
+    font-size: 45px;
+}

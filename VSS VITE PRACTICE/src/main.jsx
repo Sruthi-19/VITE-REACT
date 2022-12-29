@@ -11,7 +11,8 @@ import ReactDOM from "react-dom/client";
 // import CleanUpMain from './27DEC CLEANUP UNMOUNT/CleanUpMain'
 // import TreeMainComponent from './27DEC TREE EXPAND/27Dec_MainComponent'
 // import TreeMainComponent from './27DEC TREE EXPAND/treeMain'
-import ParentMemo from "./28DEC MEMO/Parent_Memo";
+// import ParentMemo from "./28DEC MEMO/Parent_Memo";
+import ParentUseMemo from "./28DEC USEMEMO/Parent_UseMemo";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -24,7 +25,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   // <Dec23_MainComponent/>
   // <CleanUpMain/>
   //  <TreeMainComponent />
-  <ParentMemo />
+  // <ParentMemo />
+  <ParentUseMemo/>
 );
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));

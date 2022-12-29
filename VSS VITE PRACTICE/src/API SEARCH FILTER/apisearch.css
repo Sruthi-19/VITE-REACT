@@ -1,0 +1,30 @@
+#overall-container{
+    width: 70%;
+    margin: auto;
+}
+
+#cards-div{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: space-between;
+}
+
+#user-card-div{
+    width: 45%;
+    padding: 15px 0px 15px 15px;
+    background-color: rgb(226, 43, 131);
+    color: rgb(255, 192, 222);
+}
+
+#input-tag{
+    width: 20%;
+    background-color: rgb(255, 192, 222);
+    color: rgb(57, 2, 65);
+    outline: none;
+    border: none;
+    padding: 10px;
+}

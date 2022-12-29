@@ -12,7 +12,9 @@ import ReactDOM from "react-dom/client";
 // import TreeMainComponent from './27DEC TREE EXPAND/27Dec_MainComponent'
 // import TreeMainComponent from './27DEC TREE EXPAND/treeMain'
 // import ParentMemo from "./28DEC MEMO/Parent_Memo";
-import ParentUseMemo from "./28DEC USEMEMO/Parent_UseMemo";
+// import ParentUseMemo from "./28DEC USEMEMO/Parent_UseMemo";
+// import ParentFilterAPI from "./29DEC USEMEMO FILTER API/ParentFilter";
+import APIParent from "./API SEARCH FILTER/APIParent";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -26,7 +28,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   // <CleanUpMain/>
   //  <TreeMainComponent />
   // <ParentMemo />
-  <ParentUseMemo/>
+  // <ParentUseMemo/>
+  // <ParentFilterAPI/>
+  <APIParent/>
 );
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));

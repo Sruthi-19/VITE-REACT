@@ -20,47 +20,47 @@ const APIParent = () => {
       .then((data) => setUsers(data));
   }, []);
 
-    const filterUser=useMemo(()=>{
-        console.log("USE MEMO");
+  const filterUser = useMemo(() => {
+    console.log("USE MEMO");
 
-      let filterList=users.filter((item)=>{
-          if(APIValueMatch(item.name,search)){
-              return true
-          }
-          if(APIValueMatch(item.email,search)){
-              return true
-          }
-          if(APIValueMatch(item.gender,search)){
-              return true
-          }
-          if(APIValueMatch(item.status,search)){
-              return true
-          }
-          return false
-      });
-      return filterList
-    },[search])
+    let filterList = users.filter((item) => {
+      if (APIValueMatch(item.name, search)) {
+        return true;
+      }
+      if (APIValueMatch(item.email, search)) {
+        return true;
+      }
+      if (APIValueMatch(item.gender, search)) {
+        return true;
+      }
+      if (APIValueMatch(item.status, search)) {
+        return true;
+      }
+      return false;
+    });
+    return filterList;
+  }, [search,users]);
 
-//   const [filterUser, setFilterUser] = useState([]);
-//   useEffect(() => {
-//     console.log("USE EFFECT WITH DEPEN");
-//     let x=users.filter((item) => {
-//       if (APIValueMatch(item.name, search)) {
-//         return true;
-//       }
-//       if (APIValueMatch(item.email, search)) {
-//         return true;
-//       }
-//       if (APIValueMatch(item.gender, search)) {
-//         return true;
-//       }
-//       if (APIValueMatch(item.status, search)) {
-//         return true;
-//       }
-//       return false;
-//     });
-//     setFilterUser(x);
-//   }, [search]);
+  //   const [filterUser, setFilterUser] = useState([]);
+  //   useEffect(() => {
+  //     console.log("USE EFFECT WITH DEPEN");
+  //     let x=users.filter((item) => {
+  //       if (APIValueMatch(item.name, search)) {
+  //         return true;
+  //       }
+  //       if (APIValueMatch(item.email, search)) {
+  //         return true;
+  //       }
+  //       if (APIValueMatch(item.gender, search)) {
+  //         return true;
+  //       }
+  //       if (APIValueMatch(item.status, search)) {
+  //         return true;
+  //       }
+  //       return false;
+  //     });
+  //     setFilterUser(x);
+  //   }, [search]);
 
   console.log("render");
 

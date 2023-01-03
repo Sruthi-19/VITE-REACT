@@ -14,7 +14,9 @@ import ReactDOM from "react-dom/client";
 // import ParentMemo from "./28DEC MEMO/Parent_Memo";
 // import ParentUseMemo from "./28DEC USEMEMO/Parent_UseMemo";
 // import ParentFilterAPI from "./29DEC USEMEMO FILTER API/ParentFilter";
-import APIParent from "./API SEARCH FILTER/APIParent";
+// import APIParent from "./API SEARCH FILTER/APIParent";
+// import ParentUseCallback from "./30DEC USECALLBACK/ParentUseCallback";
+import Parent2UseCallback from "./30DEC USECALLBACK/2ParentUseCallback";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -30,7 +32,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   // <ParentMemo />
   // <ParentUseMemo/>
   // <ParentFilterAPI/>
-  <APIParent/>
+  // <APIParent/>
+  // <ParentUseCallback/>
+  <Parent2UseCallback/>
 );
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
